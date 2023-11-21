@@ -1,0 +1,23 @@
+/* Nancy Code */
+/* mobile first */
+* {
+  padding: 0%;
+  margin: 0%;
+}
+/* small image icons */
+.small-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+.img-icon {
+  display: block;
+  max-width: 70%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon-name {
+  margin-top: 0.5em;
+}

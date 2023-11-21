@@ -21,3 +21,10 @@
 .icon-name {
   margin-top: 0.5em;
 }
+/* carousel Image */
+.carousel-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}

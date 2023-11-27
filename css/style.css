@@ -190,3 +190,106 @@ i {
     margin-left: 15%;
   }
 }
+
+/* Footer*/
+
+.footer-nav {
+  padding: 14px 16px;
+  background-color: #f9f9f9;
+  margin-top: 10%;
+}
+
+.footer-main a {
+  text-decoration: none;
+  color: black;
+  font-size: 100%;
+  font-weight: 500;
+}
+
+.footer-main:hover {
+  opacity: 0.5;
+}
+
+.footer-subnav {
+  list-style-type: none;
+}
+
+.footer-subnavcontent a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 80%;
+}
+
+.footer-subnavcontent:hover {
+  opacity: 0.5;
+}
+
+.footer-main li a {
+  margin-bottom: 0%;
+}
+
+.social-icons a {
+  margin-top: 5%;
+  gap: 0%;
+  padding: 0%;
+  margin-bottom: 0%;
+}
+
+.icons {
+  color: black;
+  font-size: 70%;
+  padding-top: 0%;
+  text-decoration: none;
+  margin-top: 0%;
+}
+
+.find-info li {
+  font-size: 100%;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.icons a {
+  text-decoration: none;
+  color: black;
+}
+
+.copy-right {
+  padding-left: 10%;
+  font-size: 70%;
+}
+
+/* Making Footer responsive */
+
+@media screen and (min-width: 300px) {
+  .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 821px) {
+  .footer-main a {
+    font-size: 60%;
+  }
+
+  .footer-subnavcontent a {
+    font-size: 30%;
+  }
+
+  .icons {
+    font-size: 40%;
+    gap: 0%;
+  }
+  .footer-subnav {
+    padding: 1px 4px;
+  }
+}
+
+@media screen and (min-width: 821px) {
+  .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

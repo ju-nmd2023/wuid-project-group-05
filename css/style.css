@@ -11,9 +11,9 @@
 .subnavbtn {
   font-size: 100%;
   padding: 14px 16px;
-  margin: 0;
 
   text-decoration: none;
+  margin-bottom: 20%;
 }
 
 .subnavbtn a {
@@ -42,7 +42,6 @@
   text-align: left;
 }
 
-/* Add a grey background color on hover */
 .subnav-content a:hover {
   background-color: #eee;
   color: black;
@@ -80,56 +79,114 @@
 /* Category Section*/
 
 .category-image {
-  width: 40%;
-  border: 10px solid white;
+  width: 80%;
+  margin-left: 0%;
+  margin-top: 5%;
+  border-radius: 5%;
 }
 
-.main-image {
-  width: 60%;
-  border: 10px solid white;
-}
 .container a {
   text-decoration: none;
   color: black;
-  background-color: #f9f9f9;
-  min-width: 3px;
-  box-shadow: 8px 8px rgba(201, 200, 200, 0.2);
+
   font-size: 50%;
+  min-width: 1%;
+  background-color: #f9f9f9;
+  min-width: 1px;
+  margin-left: 20%;
+  border-radius: 5%;
 }
 
 .category-discription {
-  border: 10px solid white;
-  width: 40%;
-  font-size: 150%;
+  width: 60%;
+  font-size: 120%;
   font-weight: 600;
+
+  text-align: center;
+  padding-left: 20%;
 }
 
 i {
-  padding-left: 60%;
+  margin-top: 5%;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 10%;
-  margin: 10%;
+.product-card {
+  padding-left: 0%;
+  margin: 0%;
+}
+.price {
+  color: grey;
+}
+.cart-button {
+  background-color: #ff8000;
+  width: 100%;
+  border-radius: 10%;
+  border-color: white;
+  color: #f2efed;
+  margin-bottom: 10%;
+  font-size: 80%;
+  padding: 2%;
 }
 
-@media screen and (max-width: 596) {
+.cart-button:hover {
+  opacity: 0.5;
+}
+
+/* Making Grid responsive */
+
+@media screen and (min-width: 300px) {
   .container {
-    margin: 0%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 10%;
-    padding-left: 0%;
-    border: none;
-  }
 
-  .subnav-content {
-    display: none;
+    gap: 2rem;
+  }
+  .category-discription {
+    font-size: 100%;
+  }
+  .category-image {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .container a {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .cart-button {
+    font-size: 20;
   }
 }
 
-@media screen and (min-width: 596) {
+@media screen and (max-width: 300px) {
+  .category-image {
+    width: 70%;
+    margin-left: 20%;
+  }
+
   .category-discription {
-    font-size: 20%;
+    font-size: 80%;
+  }
+  .container {
+    margin: 10%;
+  }
+}
+
+@media screen and (min-width: 821px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10%;
+    gap: 1rem;
+
+    align-items: center;
+  }
+
+  .category-discription {
+    font-size: 150%;
+  }
+  .category-image {
+    width: 70%;
+    margin-left: 15%;
   }
 }

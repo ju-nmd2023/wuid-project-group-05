@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/main.js" defer></script>
+    <title>Shopping Cart</title>
+  </head>
+  <body>
+    <h1 id="shoppingcartheader">Your Shopping Cart</h1>
+    <a id="drapeddress" href="#">Draped wrap dress</a>
+    <a href="#">
+      <img id="shoppingcartimg" src="pics/hmgoepprod.jpeg" alt=""
+    /></a>
+    <small id="price">SEK 689</small>
+    <small id="color">Color: Red</small>
+    <small id="size">Size: M</small>
+    <small id="Quantity">1</small>
+    <a id="shoppingcartlike" href="#">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="1em"
+        viewBox="0 0 512 512"
+      >
+        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path
+          d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5"
+        ></path>
+      </svg>
+    </a>
+
+    <a id="trashicon" href="#"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="1em"
+        viewBox="0 0 448 512"
+      >
+        <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+        <path
+          d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.3C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z"
+        />
+      </svg>
+    </a>
+    <button id="toggleButton"></button>
+    <h2>Grand Total</h2>
+    <hr />
+    <small id="subtotal">Subtotal 689 kr</small>
+    <small id="fee">Shipping fee 49 kr</small>
+    <small id="totalamount">Total Amount(incl. Vat)</small>
+    <small id="deliverytime">Estimated Delivery Fri 10/11 - Mon 13/11</small>
+
+    <button id="checkout">Checkout</button>
+  </body>
+</html>

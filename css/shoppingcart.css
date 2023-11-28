@@ -1,0 +1,126 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  position: relative;
+}
+.nav-menu {
+  text-align: left;
+  top: 70px;
+  left: -100%;
+  background-color: #f9f9f9;
+  flex-direction: column;
+  width: 20%;
+  transition: 0.3s;
+  margin-bottom: 950px;
+  margin-left: 10px;
+  list-style: none;
+  gap: 90px;
+}
+
+.thehamburger {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.bar {
+  display: block;
+  width: 20px;
+  height: 3px;
+  margin: 4px;
+  transition: all 0.2s ease;
+  background-color: black;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 5px;
+}
+.nav-menu {
+  display: none;
+}
+.thehamburger:hover .nav-menu {
+  display: inline;
+}
+
+.icon-menu {
+  display: flex;
+  list-style-type: none;
+  margin: 30px 30px 30px 0;
+  padding: 0;
+  gap: 20px;
+}
+
+#shoppingcartheader {
+  text-align: center;
+}
+
+#toggleButton {
+  width: 10px;
+  height: 10px;
+  border: solid;
+  border-width: 2px 2px 0 0;
+  border-color: black;
+  transform: rotate(133deg);
+  display: flex;
+  align-items: flex-end;
+  margin-left: 90%;
+}
+#shoppingcartimg {
+  width: 20%;
+  align-items: left;
+  margin-right: 60%;
+  margin-left: 5%;
+}
+#drapeddress {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 50%;
+}
+
+#trashicon {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 80%;
+}
+#size {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 80%;
+}
+
+#Quantity {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 80%;
+}
+#shoppingcartlike {
+  margin-left: 10%;
+}
+
+#checkout {
+  width: 50%;
+  height: 95%;
+  background-color: #ff8000;
+  color: white;
+  border-color: #ff8000;
+  align-items: center;
+  margin-left: 30%;
+}
+#subtotal {
+  display: flex;
+}
+
+#fee {
+  display: flex;
+}
+
+#totalamount {
+  display: flex;
+}

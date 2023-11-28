@@ -26,6 +26,27 @@ h4 {
 h5 {
   font-weight: 500;
 }
+/* header */
+.header-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 0 1rem;
+}
+/*UI icons  */
+.icon-container {
+  text-align: end;
+}
+.fa {
+  font-size: 20px !important;
+  padding: 20px 10px;
+}
+/* logo */
+.logo-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* small image icons */
 .small-icons {
   display: flex;
@@ -107,6 +128,11 @@ h5 {
 @media only screen and (min-width: 700px) {
   .small-icons {
     display: none;
+  }
+  .logo-image {
+    max-width: 35%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @keyframes slide-left-first {

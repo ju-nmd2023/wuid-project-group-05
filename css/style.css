@@ -134,7 +134,7 @@ i {
 
 /* Making Grid responsive */
 
-@media screen and (min-width: 300px) {
+@media screen and (min-width: 308px) {
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -143,7 +143,7 @@ i {
     gap: 2rem;
   }
   .category-discription {
-    font-size: 100%;
+    font-size: 120%;
   }
   .category-image {
     width: 70%;
@@ -158,20 +158,6 @@ i {
   }
 }
 
-@media screen and (max-width: 300px) {
-  .category-image {
-    width: 70%;
-    margin-left: 20%;
-  }
-
-  .category-discription {
-    font-size: 80%;
-  }
-  .container {
-    margin: 10%;
-  }
-}
-
 @media screen and (min-width: 821px) {
   .container {
     display: grid;
@@ -183,12 +169,25 @@ i {
   }
 
   .category-discription {
-    font-size: 150%;
+    font-size: 180%;
   }
   .category-image {
     width: 70%;
     margin-left: 15%;
   }
+}
+
+/* for font size at 452 */
+
+@media screen and (min-width: 452px) {
+  .category-discription {
+    font-size: 160%;
+  }
+}
+
+.category-image {
+  width: 80%;
+  margin-left: 10%;
 }
 
 /* Footer*/
@@ -217,7 +216,7 @@ i {
 .footer-subnavcontent a {
   display: block;
   text-decoration: none;
-  color: black;
+  color: rgb(90, 89, 89);
   font-size: 80%;
 }
 
@@ -262,6 +261,8 @@ i {
 
 /* Making Footer responsive */
 
+/* for 2 grids at 320 */
+
 @media screen and (min-width: 300px) {
   .footer-nav {
     display: grid;
@@ -269,6 +270,7 @@ i {
   }
 }
 
+/* for font size in footer */
 @media screen and (max-width: 821px) {
   .footer-main a {
     font-size: 60%;
@@ -287,6 +289,7 @@ i {
   }
 }
 
+/* for 3 grids at 821 */
 @media screen and (min-width: 821px) {
   .footer-nav {
     display: grid;

@@ -16,6 +16,11 @@
   margin-bottom: 20%;
 }
 
+h1 {
+  padding-top: 1%;
+  font-size: 100%;
+}
+
 .subnavbtn a {
   color: black;
   text-decoration: none;
@@ -26,10 +31,9 @@
   display: none; /* to hide the subnav content */
   position: absolute; /* to keep them in backgroundbox*/
   background-color: #f2efed;
-  min-width: 2px;
+
   box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
   font-size: 50%;
-  z-index: 1;
 }
 
 /* Styling of the subnav links */
@@ -44,10 +48,9 @@
 
 .subnav-content a:hover {
   background-color: #eee;
-  color: black;
 }
 
-/* When you move the mouse over the subnav container, open the subnav content */
+/* When you move the mouse over the subnav container, to open the subnav content */
 .subnav:hover .subnav-content {
   display: inline;
 }
@@ -120,7 +123,7 @@ i {
 .cart-button {
   background-color: #ff8000;
   width: 100%;
-  border-radius: 10%;
+  border-radius: 20px;
   border-color: white;
   color: #f2efed;
   margin-bottom: 10%;
@@ -132,7 +135,7 @@ i {
   opacity: 0.5;
 }
 
-/* Making Grid responsive */
+/* Making Image Grid responsive */
 
 @media screen and (min-width: 308px) {
   .container {

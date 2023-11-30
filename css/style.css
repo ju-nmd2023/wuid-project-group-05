@@ -7,6 +7,10 @@
 /* css variables */
 :root {
   --primary-font: "Open Sans", sans-serif;
+  --primary-color1: #ff8000;
+  --primary-color2: #000000;
+  --secondary-color1: #ffffff;
+  --secondary-color2: #f9f9f9;
 }
 body {
   font-family: var(--primary-font);
@@ -175,7 +179,7 @@ ul.diff-size li {
   text-decoration: none;
   margin-top: 0.5em;
   padding: 8px 20px;
-  background-color: #f9f9f9;
+  background-color: var(--secondary-color2);
   border-radius: 5px;
   cursor: pointer;
 }
@@ -183,8 +187,8 @@ ul.diff-size li {
   margin-top: 1rem;
 }
 .size-option:hover {
-  background-color: black;
-  color: #f9f9f9;
+  background-color: var(--primary-color2);
+  color: var(--secondary-color2);
 }
 /* product description */
 .product-descript {
@@ -281,7 +285,7 @@ ul.diff-size li {
   .product-name,
   .product-price {
     font-size: 1rem;
-    color: black;
+    color: var(--primary-color2);
   }
   /* .subhead-text {
     font-size: 1rem;
@@ -299,7 +303,7 @@ ul.diff-size li {
   /* similar product */
   .card-cont {
     padding: 1.5rem;
-    background-color: #f9f9f9;
+    background-color: var(--secondary-color2);
     border-radius: 20px;
   }
   .similar-product-container {

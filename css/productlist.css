@@ -16,6 +16,11 @@
   margin-bottom: 20%;
 }
 
+h1 {
+  padding-top: 1%;
+  font-size: 100%;
+}
+
 .subnavbtn a {
   color: black;
   text-decoration: none;
@@ -118,7 +123,7 @@ i {
 .cart-button {
   background-color: #ff8000;
   width: 100%;
-  border-radius: 10%;
+  border-radius: 20px;
   border-color: white;
   color: #f2efed;
   margin-bottom: 10%;

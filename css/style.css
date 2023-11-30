@@ -37,6 +37,7 @@ h5 {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding: 0 1rem;
+  align-items: center;
 }
 /*UI icons  */
 .icon-container {
@@ -118,7 +119,7 @@ h5 {
 /* category section */
 .border-radius {
   border-radius: 100%;
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 .sub-heading {
@@ -257,6 +258,22 @@ ul.diff-size li {
   .fa {
     font-size: 150% !important;
   }
+  .subhead-text {
+    /* text-align: center; */
+    font-size: 1.5rem;
+  }
+  .descript-text {
+    font-size: 1rem;
+  }
+  .review-text {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  .category-heading {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+  }
   /* product page */
   ul.diff-size li {
     font-size: 1rem;
@@ -266,9 +283,9 @@ ul.diff-size li {
     font-size: 1rem;
     color: black;
   }
-  .subhead-text {
+  /* .subhead-text {
     font-size: 1rem;
-  }
+  } */
   .dress-color {
     max-width: 15%;
   }
@@ -309,7 +326,7 @@ ul.diff-size li {
 }
 @media only screen and (max-width: 1024px) {
   .card-with-img {
-    max-width: 90%;
+    max-width: 100%;
   }
 }
 @keyframes slide-left-first {

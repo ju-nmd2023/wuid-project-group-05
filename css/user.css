@@ -1,0 +1,64 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+/* css variables */
+:root {
+  --primary-font: "Open Sans", sans-serif;
+}
+body {
+  font-family: var(--primary-font);
+}
+
+header {
+  background-color: #f9f9f9;
+}
+
+/* user input form */
+
+h1 {
+  padding-top: 3%;
+  font-weight: 500;
+  padding-bottom: 5%;
+  margin-left: 45%;
+}
+
+#email {
+  margin-left: 39%;
+}
+
+#password {
+  margin-left: 39%;
+}
+
+input {
+  margin-left: 39%;
+  width: 30%;
+  border-radius: 10px;
+  width: 25%;
+}
+
+.and {
+  text-align: center;
+  padding-left: 3%;
+
+  font-size: 120%;
+}
+
+.login-button {
+  margin-top: 1%;
+  background-color: #ff8000;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#emailtext {
+  margin-bottom: 1%;
+  width: 25%;
+}
+
+#passtext {
+  margin-bottom: 1%;
+  width: 25%;
+}

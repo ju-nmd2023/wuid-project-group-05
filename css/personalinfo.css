@@ -1,0 +1,45 @@
+/* Personal information */
+
+.allforms {
+  background-color: #f9f9f9;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 70;
+  margin-left: 25%;
+}
+#h1personalinfo {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.inputpersonal {
+  margin-left: 30px;
+}
+.addressform {
+  margin-left: 30px;
+}
+.cashform {
+  margin-left: 30px;
+}
+#cashbutton {
+  width: 25%;
+  height: 10%;
+  background-color: #ff8000;
+  color: white;
+  border-color: #ff8000;
+  margin-left: 35%;
+}
+h4 {
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.thethiredbox a {
+  text-decoration: none;
+  color: black;
+  display: inline-flex;
+}
+.addressform {
+  margin-right: 18%;
+}

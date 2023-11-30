@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/shoppingcart.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/main.js" defer></script>
+    <title>Personal Information</title>
+  </head>
+  <body>
+    <header>
+      <section class="header-container">
+        <div>1</div>
+
+        <img class="logo-image" src="images/logo1.svg" alt="logo" />
+
+        <figure class="icon-container">
+          <i class="fa fa-heart"></i>
+          <i class="fa fa-shopping-cart"></i>
+        </figure>
+      </section>
+    </header>
+
+    <main>
+      <div class="allforms">
+        <form class="personalinfo">
+          <h1 id="h1personalinfo">Personal Information</h1>
+          <input
+            class="inputpersonal"
+            type="text"
+            name="fname"
+            placeholder="First name"
+            size="27"
+          />
+          <input
+            class="inputpersonal"
+            type="text"
+            name="lname"
+            placeholder="Last name"
+            size="27"
+          />
+          <br />
+          <input
+            class="inputpersonal"
+            type="number"
+            number="mobileno"
+            placeholder="+46XXXXXXXXX"
+            size="27"
+          />
+        </form>
+        <form class="addressform">
+          <h2 id="h2address">Delivery Address</h2>
+          Address* <br />
+          <input type="text" address="adress" size="55" /><br />
+          City* <br />
+          <input type="text" city="city" size="55" /> <br />
+          Postal Code* <br /><input type="number" postal code="postalcode" />
+          <br />
+          Country* <br />
+          <input type="text" country="contry" size="55" /><br />
+        </form>
+
+        <form class="cashform">
+          <h2 id="h2cash">Payment Method</h2>
+          <input type="radio" payment="method" value="Credit Card" /> Credit
+          Card<br />
+          <input type="radio" payment="method" value="Paypal" />Paypal<br />
+          <input type="radio" payment="method" value="Swish" />
+          Swish
+        </form>
+      </div>
+      <button id="cashbutton">Proceed to Pay</button>
+    </main>
+
+    <footer class="footer-nav">
+      <ul class="footer-subnav">
+        <li class="footer-main"><a href="#">Company Info</a></li>
+        <div class="footer-subnavcontent">
+          <a href="#">About Brand</a>
+          <a href="#">Career</a>
+          <a href="#">Fashion Blogger</a>
+        </div>
+      </ul>
+
+      <ul class="footer-subnav">
+        <li class="footer-main"><a href="#">Customer Care</a></li>
+        <div class="footer-subnavcontent">
+          <a href="#">Contact Us</a>
+          <a href="#">Payment & Taxes</a>
+        </div>
+      </ul>
+
+      <ul class="footer-subnav">
+        <li class="footer-main"><a href="#">Help & Support</a></li>
+        <div class="footer-subnavcontent">
+          <a href="#">Shipping Info</a>
+          <a href="#">Free Return</a>
+          <a href="#">Track Order</a>
+        </div>
+      </ul>
+
+      <ul class="footer-subnav">
+        <li class="footer-main"><a href="#">Find Us</a></li>
+        <div class="icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <br />
+          <a href="#">&#169; 2023 all rights reserved</a>
+        </div>
+      </ul>
+    </footer>
+  </body>
+</html>

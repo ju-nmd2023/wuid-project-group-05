@@ -1,74 +1,22 @@
-* {
-  font-family: "Open Sans", sans-serif;
-  padding: 0;
-  margin: 0;
+.header-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 0 1rem;
 }
-
-nav {
-  position: relative;
-}
-.nav-menu {
-  text-align: left;
-  top: 70px;
-  left: -100%;
-  background-color: #f9f9f9;
-  flex-direction: column;
-  width: 20%;
-  transition: 0.3s;
-  margin-bottom: 950px;
-  margin-left: 10px;
-  list-style: none;
-  gap: 90px;
-}
-
-.thehamburger {
+.logo-image {
   display: block;
-  cursor: pointer;
-  margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
 }
 
-.bar {
-  display: block;
-  width: 20px;
-  height: 3px;
-  margin: 4px;
-  transition: all 0.2s ease;
-  background-color: black;
-}
-.nav-menu a {
-  text-decoration: none;
-  color: #000;
-  margin-bottom: 5px;
-}
-.nav-menu {
-  display: none;
-}
-.thehamburger:hover .nav-menu {
-  display: inline;
-}
-
-.icon-menu {
-  display: flex;
-  list-style-type: none;
-  margin: 30px 30px 30px 0;
-  padding: 0;
-  gap: 20px;
-}
+/* Shoppingcart codes */
 
 #shoppingcartheader {
   text-align: center;
 }
-
-#toggleButton {
-  width: 10px;
-  height: 10px;
-  border: solid;
-  border-width: 2px 2px 0 0;
-  border-color: black;
-  transform: rotate(133deg);
-  display: flex;
-  align-items: flex-end;
-  margin-left: 90%;
+#itemsnumber {
+  margin-left: 25px;
 }
 #shoppingcartimg {
   width: 20%;
@@ -78,49 +26,241 @@ nav {
 }
 #drapeddress {
   color: #000;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin-right: 50%;
+  margin-left: 30%;
+  position: relative;
+  top: 80px;
+  text-decoration: none;
+}
+
+#price {
+  margin-left: 30%;
+  position: relative;
+  bottom: 210px;
+}
+
+#color {
+  position: relative;
+  left: -50px;
+  bottom: 190px;
 }
 
 #trashicon {
   display: flex;
   align-items: flex-end;
   margin-left: 80%;
+  margin-top: 20px;
 }
 #size {
-  display: flex;
-  align-items: flex-end;
-  margin-left: 80%;
+  margin-left: 10%;
+  position: relative;
+  left: -175px;
+  top: -170px;
+  bottom: 300px;
 }
 
 #Quantity {
-  display: flex;
-  align-items: flex-end;
-  margin-left: 80%;
+  position: relative;
+  left: -220px;
+  bottom: 140px;
+}
+
+#toggleButton {
+  width: 10px;
+  height: 10px;
+  border: solid;
+  border-width: 2px 2px 0 0;
+  border-color: black;
+  transform: rotate(133deg);
+  position: relative;
+  left: -350px;
+  top: -135px;
 }
 #shoppingcartlike {
   margin-left: 10%;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+  right: 290px;
+  top: -110px;
 }
-
+#deliverytime {
+  margin-left: 30px;
+  top: -120px;
+  position: relative;
+}
 #checkout {
   width: 50%;
-  height: 95%;
+  height: 10%;
   background-color: #ff8000;
   color: white;
   border-color: #ff8000;
   align-items: center;
   margin-left: 30%;
+  margin-bottom: 200px;
 }
 #subtotal {
   display: flex;
+  margin-bottom: 10px;
 }
 
 #fee {
   display: flex;
+  margin-bottom: 10px;
 }
 
 #totalamount {
   display: flex;
+}
+
+.thefirstbox {
+  background-color: #f9f9f9;
+  width: 50%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.thesecondbox {
+  background-color: #f9f9f9;
+  width: 50%;
+}
+.allboxes {
+  display: flex;
+}
+
+h1 {
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+h3 {
+  margin-bottom: 20px;
+}
+hr {
+  margin-bottom: 20px;
+}
+#hr2 {
+  margin-bottom: 300px;
+}
+#totalamount {
+  margin-bottom: 10px;
+}
+
+.youmaylikeimg {
+  width: 40%;
+}
+
+.thethiredbox {
+  background-color: #f9f9f9;
+  display: flex;
+}
+#firstdressleft {
+  margin-left: 50px;
+}
+
+.footer-nav {
+  padding: 14px 16px;
+  background-color: #f9f9f9;
+  margin-top: 10%;
+}
+
+.footer-main a {
+  text-decoration: none;
+  color: black;
+  font-size: 100%;
+  font-weight: 500;
+}
+
+.footer-main:hover {
+  opacity: 0.5;
+}
+
+.footer-subnav {
+  list-style-type: none;
+}
+
+.footer-subnavcontent a {
+  display: block;
+  text-decoration: none;
+  color: rgb(90, 89, 89);
+  font-size: 80%;
+}
+
+.footer-subnavcontent:hover {
+  opacity: 0.5;
+}
+
+.footer-main li a {
+  margin-bottom: 0%;
+}
+
+.social-icons a {
+  margin-top: 5%;
+  gap: 0%;
+  padding: 0%;
+  margin-bottom: 0%;
+}
+
+.icons {
+  color: black;
+  font-size: 70%;
+  padding-top: 0%;
+  text-decoration: none;
+  margin-top: 0%;
+}
+
+.find-info li {
+  font-size: 100%;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.icons a {
+  text-decoration: none;
+  color: black;
+}
+
+.copy-right {
+  padding-left: 10%;
+  font-size: 70%;
+}
+/* Making Footer responsive */
+
+/* for 2 grids at 320 */
+
+@media screen and (min-width: 300px) {
+  .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* for font size in footer */
+@media screen and (max-width: 821px) {
+  .footer-main a {
+    font-size: 60%;
+  }
+
+  .footer-subnavcontent a {
+    font-size: 30%;
+  }
+
+  .icons {
+    font-size: 40%;
+    gap: 0%;
+  }
+  .footer-subnav {
+    padding: 1px 4px;
+  }
+}
+
+/* for 3 grids at 821 */
+@media screen and (min-width: 821px) {
+  .footer-nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

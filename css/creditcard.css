@@ -1,0 +1,22 @@
+/* cridit codes */
+.criditsdiv {
+  background-color: #f9f9f9;
+  width: 50%;
+  height: 70%;
+  padding: 20px;
+  text-align: left;
+  margin-left: 25%;
+}
+#creditinfo {
+  align-items: flex-start;
+}
+
+#paybotton {
+  width: 25%;
+  height: 10%;
+  background-color: #ff8000;
+  color: white;
+  border-color: #ff8000;
+  align-items: center;
+  margin-left: 38%;
+}

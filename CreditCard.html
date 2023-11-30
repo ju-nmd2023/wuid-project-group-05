@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/shoppingcart.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/main.js" defer></script>
+    <title>Creditcard</title>
+  </head>
+  <body>
+    <header>
+      <section class="header-container">
+        <div>1</div>
+
+        <img class="logo-image" src="images/logo1.svg" alt="logo" />
+
+        <figure class="icon-container">
+          <i class="fa fa-heart"></i>
+          <i class="fa fa-shopping-cart"></i>
+        </figure>
+      </section>
+    </header>
+
+    <main>
+      <div class="criditsdiv">
+        <form>
+          <!-- This form is inspired by HTML label Tag lesson from w3schools */ -->
+          <h1 id="creditinfo">Credit Card Information</h1>
+          <label for="cardNumber">Card Number*<br /></label>
+          <input
+            type="text"
+            id="cardNumber"
+            name="cardNumber"
+            placeholder="Enter card number"
+            size="55"
+          />
+
+          <label for="expiryDate"><br />Expiry Date*<br /></label>
+          <input
+            type="text"
+            id="expiryDate"
+            name="expiryDate"
+            placeholder="MM/YY"
+          />
+
+          <label for="cvv"><br />CVV*<br /></label>
+          <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" />
+
+          <label for="cardName"><br />Card Holder Name*<br /></label>
+          <input
+            type="text"
+            id="cardName"
+            name="cardName"
+            placeholder="Enter cardholder name"
+            size="55"
+          />
+        </form>
+      </div>
+      <button id="paybotton">Confirm Payment</button>
+    </main>
+
+    <footer class="footer-nav">
+      <ul class="footer-subnav">
+        <li class="footer-main"><a href="#">Company Info</a></li>
+        <div class="footer-subnavcontent">
+          <a href="#">About Brand</a>
+          <a href="#">Career</a>
+          <a href="#">Fashion Blogger</a>
+        </div>
+      </ul>
+
+      <ul class="footer-subnav">
+        <li class="footer-main"><a href="#">Customer Care</a></li>
+        <div class="footer-subnavcontent">
+          <a href="#">Contact Us</a>
+          <a href="#">Payment & Taxes</a>
+        </div>
+      </ul>
+
+      <ul class="footer-subnav">
+        <li class="footer-main"><a href="#">Help & Support</a></li>
+        <div class="footer-subnavcontent">
+          <a href="#">Shipping Info</a>
+          <a href="#">Free Return</a>
+          <a href="#">Track Order</a>
+        </div>
+      </ul>
+
+      <ul class="footer-subnav">
+        <li class="footer-main"><a href="#">Find Us</a></li>
+        <div class="icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          <br />
+          <a href="#">&#169; 2023 all rights reserved</a>
+        </div>
+      </ul>
+    </footer>
+  </body>
+</html>

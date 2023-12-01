@@ -5,28 +5,31 @@
   margin: 0;
 }
 
-nav {
-  position: relative;
+.nav-container {
+  position: absolute;
+  background-color: #fff;
+  padding-bottom: 0.5rem;
+  margin-top: 1rem;
+  box-shadow: 2px 2px 10px;
 }
-.nav-menu {
-  text-align: left;
-  top: 70px;
-  left: -100%;
-  background-color: #f9f9f9;
-  flex-direction: column;
-  width: 20%;
-  transition: 0.3s;
-  margin-left: 10px;
+.nav-menu li {
   list-style: none;
-  gap: 90px;
+  padding: 8px 20px;
 }
-
+.li-name:hover a {
+  color: #fff;
+}
+.li-name:hover {
+  background-color: #000;
+}
 .thehamburger {
   display: block;
   cursor: pointer;
   margin-bottom: 10px;
 }
-
+.burger-bars {
+  z-index: 1;
+}
 .bar {
   display: block;
   width: 20px;
@@ -40,17 +43,27 @@ nav {
   color: #000;
   margin-bottom: 5px;
 }
-.nav-menu {
-  display: none;
-}
-.thehamburger:hover .nav-menu {
-  display: inline;
-}
 
 .icon-menu {
   display: flex;
   list-style-type: none;
-  margin: 30px 30px 30px 0;
+
   padding: 0;
   gap: 20px;
+}
+.nav-icon {
+  padding: 8px 10px;
+}
+.hidden {
+  display: none;
+}
+/* desktop view */
+@media only screen and (min-width: 700px) {
+  .nav-menu li {
+    padding: 8px 20px;
+    margin: 10px 0;
+  }
+  .nav-container {
+    width: 30%;
+  }
 }

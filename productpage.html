@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/shoppingcart.css" />
+    <link rel="stylesheet" href="css/menubar.css" />
     <link rel="stylesheet" href="css/productlist.css" />
+    <script src="js/menubar.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,13 +22,13 @@
   <body>
     <header>
       <section class="header-container">
-        <div>
+        <div class="burger-bars">
           <div class="thehamburger">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
           </div>
-          <nav class="nav-container hide">
+          <nav class="nav-container hidden">
             <ul class="nav-menu">
               <li class="li-name"><a href="#">Dresses</a></li>
               <li class="li-name"><a href="#">Tops</a></li>
@@ -37,7 +38,7 @@
               <li class="li-name"><a href="#">Jumpsuits</a></li>
             </ul>
             <ul class="icon-menu">
-              <li>
+              <li class="nav-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
@@ -49,7 +50,7 @@
                   />
                 </svg>
               </li>
-              <li>
+              <li class="nav-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
@@ -61,7 +62,7 @@
                   />
                 </svg>
               </li>
-              <li>
+              <li class="nav-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
@@ -73,7 +74,7 @@
                   />
                 </svg>
               </li>
-              <li>
+              <li class="nav-icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   height="1em"
@@ -143,19 +144,43 @@
               <li class="size-option">XL</li>
             </ul>
           </section>
-          <section class="product-descript">
-            <h3 class="descript-text subhead-text">Product Description</h3>
-            <svg
-              viewBox="0 0 16 16"
-              xmlns="http://www.w3.org/2000/svg"
-              height="16"
-              width="16"
-              class="cc3ba9 arrow-down"
-            >
-              <path
-                d="M8 12a.5.5 0 0 1-.369-.162l-5.5-6a.5.5 0 1 1 .738-.676L8 10.76l5.131-5.598a.5.5 0 0 1 .738.676l-5.5 6A.5.5 0 0 1 8 12Z"
-              ></path>
-            </svg>
+          <section>
+            <div class="product-descript">
+              <h3 class="descript-text subhead-text">Product Description</h3>
+              <div class="arrow-div">
+                <svg
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="16"
+                  class="cc3ba9 arrow-down"
+                >
+                  <path
+                    d="M8 12a.5.5 0 0 1-.369-.162l-5.5-6a.5.5 0 1 1 .738-.676L8 10.76l5.131-5.598a.5.5 0 0 1 .738.676l-5.5 6A.5.5 0 0 1 8 12Z"
+                  ></path>
+                </svg>
+                <svg
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="16"
+                  class="cc3ba9 arrow-up hidden"
+                >
+                  <path
+                    d="M8 4a.5.5 0 0 1 .369.162l5.5 6a.5.5 0 0 1-.738.676L8 5.24l-5.131 5.598a.5.5 0 0 1-.738-.676l5.5-6A.5.5 0 0 1 8 4Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <p class="product-text hidden">
+                A short dress in woven quality with a slight sheen. The dress
+                has a stand-up collar with extra fabric that wraps around the
+                front for a draped effect. Concealed buttons at the neck,
+                concealed zipper at the back and long sleeves without shoulder
+                seams. Unlined.
+              </p>
+            </div>
           </section>
           <section class="product-descript hide">
             <h3 class="descript-text subhead-text">Care</h3>
@@ -245,64 +270,73 @@
               </svg>
             </div>
           </section>
-          <div class="add-to-cart-btn">
-            <button class="cart-button subhead-text">Add to Cart</button>
+          <div class="button-container">
+            <button class="basket-button subhead-text">Add to Cart</button>
           </div>
         </section>
       </div>
       <section class="similar-product-container hide">
         <h2 class="subhead-text">Similar Products</h2>
         <div class="similar-product">
-          <a class="card-cont" href="#"
-            ><figure>
+          <div class="card-cont">
+            <figure>
               <img
                 class="similar-image"
                 src="images/Black 2.jpg"
                 alt="Black dress"
               />
-              <figcaption class="product-name">Black dress</figcaption>
+              <figcaption class="product-name product-caption">
+                Black dress
+                <i class="fa fa-heart heart"></i>
+              </figcaption>
               <p class="price">360kr</p>
-            </figure></a
-          >
-          <a class="card-cont" href="#"
-            ><figure>
+            </figure>
+          </div>
+
+          <div class="card-cont">
+            <figure>
               <img
                 class="similar-image"
                 src="images/Sequined dress.jpg"
                 alt="Sequined dress"
               />
-              <figcaption class="product-name">
+              <figcaption class="product-name product-caption">
                 Sequined silver dress
+                <i class="fa fa-heart heart"></i>
               </figcaption>
               <p class="price">450 kr</p>
-            </figure></a
-          >
-          <a class="card-cont" href="#"
-            ><figure>
+            </figure>
+          </div>
+
+          <div class="card-cont">
+            <figure>
               <img
                 class="similar-image"
                 src="images/Mini dress with ruffles.webp"
                 alt="Mini dress with ruffles"
               />
-              <figcaption class="product-name">
+              <figcaption class="product-name product-caption">
                 Mini dress with ruffles
+                <i class="fa fa-heart heart"></i>
               </figcaption>
               <p class="price">560 kr</p>
-            </figure></a
-          >
-          <a class="card-cont" href="#"
-            ><figure class="product-card">
+            </figure>
+          </div>
+
+          <div class="card-cont">
+            <figure class="product-card">
               <img
                 class="similar-image"
                 src="images/White dress.jpg"
                 alt="Mini dress with ruffles"
               />
-              <figcaption class="product-name">
-                Mini dress with ruffles
+              <figcaption class="product-name product-caption">
+                White Dress
+                <i class="fa fa-heart heart"></i>
               </figcaption>
               <p class="price">560 kr</p>
-            </figure></a
-          >
+            </figure>
+          </div>
         </div>
       </section>
     </main>

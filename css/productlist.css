@@ -203,7 +203,7 @@ i {
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top: 15%;
+    margin-top: 10%;
     gap: 1rem;
 
     align-items: center;

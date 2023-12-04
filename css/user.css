@@ -68,7 +68,7 @@ input {
 
 @media screen and (max-width: 823px) {
   #loginpage {
-    font-size: 120%;
+    font-size: 140%;
     padding-top: 3%;
     margin-left: 49%;
   }
@@ -90,22 +90,22 @@ input {
 
   #password {
     margin-left: 50%;
-    font-size: 100%;
+    font-size: 120%;
   }
   #email {
     margin-left: 51%;
-    font-size: 100%;
+    font-size: 120%;
   }
 
   .and {
     margin-left: 7%;
-    font-size: 100%;
+    font-size: 120%;
   }
 }
 
 @media screen and (max-width: 430px) {
   #loginpage {
-    font-size: 120%;
+    font-size: 140%;
     padding-top: 20%;
     margin-left: 42%;
   }
@@ -127,15 +127,15 @@ input {
 
   #password {
     margin-left: 44%;
-    font-size: 100%;
+    font-size: 120%;
   }
   #email {
     margin-left: 47%;
-    font-size: 100%;
+    font-size: 120%;
   }
 
   .and {
     margin-left: 7%;
-    font-size: 100%;
+    font-size: 120%;
   }
 }

@@ -1,164 +1,100 @@
-.header-container {
+.cart-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  padding: 0 1rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
-.logo-image {
-  display: block;
+
+.cart-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 100px;
+}
+
+.item-title {
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 32px;
+  padding-top: 110px;
+}
+
+.cart-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  position: relative;
+}
+.product-img {
   max-width: 100%;
   height: auto;
+  max-height: 200px; /* To manage the img */
 }
 
-/* Shoppingcart codes */
+/* Ask Nancy */
 
-#shoppingcartheader {
-  text-align: center;
+.delivery-info {
+  grid-column: span 2;
 }
-#itemsnumber {
-  margin-left: 25px;
-}
-#shoppingcartimg {
-  width: 20%;
-  align-items: left;
-  margin-right: 60%;
-  margin-left: 5%;
-}
-#drapeddress {
-  color: #000;
-  margin-left: 30%;
-  position: relative;
-  top: 80px;
-  text-decoration: none;
-}
-
-#price {
-  margin-left: 30%;
-  position: relative;
-  bottom: 210px;
-}
-
-#color {
-  position: relative;
-  left: -50px;
-  bottom: 190px;
-}
-
-#trashicon {
+.item-details {
   display: flex;
-  align-items: flex-end;
-  margin-left: 80%;
-  margin-top: 20px;
+  flex-direction: column;
 }
-#size {
-  margin-left: 10%;
-  position: relative;
-  left: -175px;
-  top: -170px;
-  bottom: 300px;
-}
-
-#Quantity {
-  position: relative;
-  left: -220px;
-  bottom: 140px;
-}
-
-#toggleButton {
-  width: 10px;
-  height: 10px;
-  border: solid;
-  border-width: 2px 2px 0 0;
-  border-color: black;
-  transform: rotate(133deg);
-  position: relative;
-  left: -350px;
-  top: -135px;
-}
-#shoppingcartlike {
-  margin-left: 10%;
-  text-decoration: none;
-  color: #000;
-  position: relative;
-  right: 290px;
-  top: -110px;
-}
-#deliverytime {
-  margin-left: 30px;
-  top: -120px;
-  position: relative;
-}
-#checkout {
-  width: 50%;
-  height: 10%;
-  background-color: #ff8000;
-  color: white;
-  border-color: #ff8000;
+.wishlist-info {
+  display: flex;
   align-items: center;
-  margin-left: 30%;
-  margin-bottom: 200px;
-}
-#subtotal {
-  display: flex;
-  margin-bottom: 10px;
 }
 
-#fee {
-  display: flex;
-  margin-bottom: 10px;
+.trash-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
 }
 
-#totalamount {
-  display: flex;
-}
-
-.thefirstbox {
+.order-summary-box {
   background-color: #f9f9f9;
-  width: 50%;
+  padding: 20px;
+}
+
+.line-divider {
+  border-top: 1px solid black;
+  margin: 10px 0;
+}
+
+.subtotal-info,
+.shipping-info,
+.total-amount-info {
   display: flex;
-  position: relative;
-  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.thesecondbox {
-  background-color: #f9f9f9;
-  width: 50%;
-}
-.allboxes {
-  display: flex;
-}
-
-h1 {
-  margin-bottom: 30px;
-  margin-top: 100px;
-}
-
-h2 {
-  margin-bottom: 10px;
-}
-h3 {
-  margin-bottom: 20px;
-}
-hr {
-  margin-bottom: 20px;
-}
-#hr2 {
-  margin-bottom: 300px;
-}
-#totalamount {
-  margin-bottom: 10px;
+.checkout-btn {
+  background-color: #ff8000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
 }
 
-.youmaylikeimg {
-  width: 40%;
-}
-
-.thethiredbox {
-  background-color: #f9f9f9;
-  display: flex;
-}
-#firstdressleft {
-  margin-left: 50px;
+@media (max-width: 768px) {
+  .cart-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer-nav {
@@ -227,6 +163,34 @@ hr {
   padding-left: 10%;
   font-size: 70%;
 }
+
+.subhead-youmaylike {
+  padding-left: 33px;
+}
+.card-foryoumaylike {
+  padding: 1.5rem;
+  background-color: var(--secondary-color2);
+  border-radius: 20px;
+}
+.youmaylike-container {
+  display: block;
+}
+.youmaylike-product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.youmaylike-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+a.card-foryoumaylike {
+  text-decoration: none;
+}
+
 /* Making Footer responsive */
 
 /* for 2 grids at 320 */
@@ -262,5 +226,68 @@ hr {
   .footer-nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.sub-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.cart-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cart-item-container {
+  width: 48%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  position: relative;
+}
+
+.cart-item-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.item-details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-summary-container {
+  width: 48%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.line-divider {
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.total-amount {
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .cart-item-container,
+  .order-summary-container {
+    width: 100%;
   }
 }

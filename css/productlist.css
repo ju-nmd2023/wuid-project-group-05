@@ -18,7 +18,7 @@
 
 #nav-heading {
   padding-top: 1%;
-  font-size: 200%;
+  font-size: 140%;
   font-weight: 400;
 }
 
@@ -79,7 +79,7 @@
 
   #nav-heading {
     padding-top: 4%;
-    font-size: 140%;
+    font-size: 120%;
     font-weight: 500;
   }
 }
@@ -152,14 +152,14 @@ i {
   font-size: 140%;
 }
 .cart-button {
-  background-color: #ff8000;
   width: 100%;
-  border-radius: 20px;
-  border-color: white;
-  color: #f2efed;
-  margin-bottom: 10%;
-  font-size: 120%;
-  padding: 2%;
+  padding: 2px 0;
+  background-color: #ff8000;
+  color: white;
+  border-color: #ff8000;
+  align-items: center;
+  margin: 1rem auto 0 auto;
+  cursor: pointer;
 }
 
 .cart-button:hover {

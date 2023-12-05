@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="css/menubar.css" />
     <link rel="stylesheet" href="css/creditcard.css" />
     <link rel="stylesheet" href="css/productlist.css" />
-    <script src="js/menubar.js" defer></script>
+    <script src="js/productpage.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <script src="js/main.js" defer></script>
     <title>Creditcard</title>
@@ -96,22 +100,19 @@
         </figure>
       </section>
     </header>
-
     <main>
       <div class="criditsdiv">
-        <form>
-          <!-- This form is inspired by HTML label Tag lesson from w3schools */ -->
-          <h1 id="creditinfo">Credit Card Information</h1>
-          <label for="cardNumber">Card Number*<br /></label>
+        <h3 id="creditinfo">Credit Card Information</h3>
+        <form class="creditcard-form">
+          <label for="cardNumber" class="margin-option">Card Number*</label>
           <input
             type="text"
             id="cardNumber"
             name="cardNumber"
             placeholder="Enter card number"
-            size="55"
           />
 
-          <label for="expiryDate"><br />Expiry Date*<br /></label>
+          <label for="expiryDate" class="margin-option">Expiry Date*</label>
           <input
             type="text"
             id="expiryDate"
@@ -119,20 +120,19 @@
             placeholder="MM/YY"
           />
 
-          <label for="cvv"><br />CVV*<br /></label>
+          <label for="cvv" class="margin-option">CVV*</label>
           <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" />
 
-          <label for="cardName"><br />Card Holder Name*<br /></label>
+          <label for="cardName" class="margin-option">Card Holder Name*</label>
           <input
             type="text"
             id="cardName"
             name="cardName"
             placeholder="Enter cardholder name"
-            size="55"
           />
+          <button id="paybotton" class="margin-option">Confirm Payment</button>
         </form>
       </div>
-      <button id="paybotton">Confirm Payment</button>
     </main>
 
     <footer class="footer-nav">

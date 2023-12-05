@@ -1,22 +1,74 @@
-/* cridit codes */
+#creditinfo {
+  margin: 1rem;
+  text-align: center;
+}
+.margin-option {
+  margin-top: 2rem;
+}
 .criditsdiv {
   background-color: #f9f9f9;
-  width: 50%;
-  height: 70%;
-  padding: 20px;
-  text-align: left;
-  margin-left: 25%;
+  padding: 1rem;
+  margin: 1rem;
 }
-#creditinfo {
+.creditcard-form {
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
 }
+#cardNumber,
+#expiryDate,
+#cvv,
+#cardName {
+  margin-top: 5px;
+}
 
+#cardNumber,
+#cardName {
+  width: 100%;
+}
+#expiryDate,
+#cvv {
+  width: 50%;
+}
 #paybotton {
-  width: 25%;
-  height: 10%;
+  width: 50%;
+  padding: 2px 0;
   background-color: #ff8000;
   color: white;
   border-color: #ff8000;
   align-items: center;
-  margin-left: 38%;
+  margin: 2rem auto 0 auto;
+}
+#paybotton:hover {
+  background-color: #c66504;
+}
+/* small screens */
+
+/* desktop */
+@media only screen and (min-width: 700px) {
+  .criditsdiv {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #cardNumber,
+  #cardName {
+    width: 70%;
+  }
+
+  .margin-option {
+    margin-top: 1rem;
+  }
+}
+@media only screen and (min-width: 1080px) {
+  .criditsdiv {
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .creditcard-form {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/menubar.css" />
     <link rel="stylesheet" href="css/productlist.css" />
-    <script src="js/menubar.js" defer></script>
+    <script src="js/productpage.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,6 +16,13 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <title>Draped Wrap Dress</title>
   </head>
@@ -94,7 +101,9 @@
 
         <figure class="icon-container">
           <i class="fa fa-heart"></i>
-          <i class="fa fa-shopping-cart"></i>
+          <i class="fa fa-shopping-cart"
+            ><span class="no-of-items hide"><p class="display-count"></p></span
+          ></i>
         </figure>
       </section>
     </header>
@@ -106,14 +115,14 @@
             src="images/Drapedwrapdress.jpg"
             alt="Red dress"
           />
-          <img
+          <!-- <img
             class="single-image overlay"
             src="images/Drapedback.webp"
             alt="Red dress"
-          />
+          /> -->
           <div class="small-img">
-            <img class="dress-color" src="images/drap2.webp" alt="Dress" />
-            <img class="dress-color" src="images/drape3.webp" alt="Dress" />
+            <img class="dress-color" src="images/drap2.webp" alt="red Dress" />
+            <img class="dress-color" src="images/drape3.webp" alt="red Dress" />
           </div>
         </figure>
 
@@ -125,14 +134,19 @@
           <h4 class="subhead-text">Color</h4>
           <figure class="color-option">
             <img
-              class="dress-color"
+              class="dress-color available-color"
               src="images/blackcolor.webp"
               alt="black dress"
             />
             <img
-              class="dress-color"
+              class="dress-color available-color"
               src="images/black&white.webp"
               alt="black and white dress"
+            />
+            <img
+              class="dress-color available-color"
+              src="images/Drapedwrapdress.jpg"
+              alt="red dress"
             />
           </figure>
           <section class="size-container">
@@ -174,41 +188,92 @@
             </div>
             <div>
               <p class="product-text hidden">
-                A short dress in woven quality with a slight sheen. The dress
-                has a stand-up collar with extra fabric that wraps around the
-                front for a draped effect. Concealed buttons at the neck,
-                concealed zipper at the back and long sleeves without shoulder
-                seams. Unlined.
+                A short dress in a woven quality with a V-neckline and a fixed
+                wrap at the front. The dress has long sleeves and a hidden zip
+                at the back. Cut out with an elastic waist at the back and a
+                ruching at one side for a draped effect. Unlined.
               </p>
             </div>
           </section>
-          <section class="product-descript hide">
-            <h3 class="descript-text subhead-text">Care</h3>
-            <svg
-              viewBox="0 0 16 16"
-              xmlns="http://www.w3.org/2000/svg"
-              height="16"
-              width="16"
-              class="cc3ba9 arrow-down"
-            >
-              <path
-                d="M8 12a.5.5 0 0 1-.369-.162l-5.5-6a.5.5 0 1 1 .738-.676L8 10.76l5.131-5.598a.5.5 0 0 1 .738.676l-5.5 6A.5.5 0 0 1 8 12Z"
-              ></path>
-            </svg>
+          <section class="hide care-div">
+            <div class="product-descript">
+              <h3 class="descript-text subhead-text">Care</h3>
+              <div class="arrow-div">
+                <svg
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="16"
+                  class="cc3ba9 arrow-down"
+                >
+                  <path
+                    d="M8 12a.5.5 0 0 1-.369-.162l-5.5-6a.5.5 0 1 1 .738-.676L8 10.76l5.131-5.598a.5.5 0 0 1 .738.676l-5.5 6A.5.5 0 0 1 8 12Z"
+                  ></path>
+                </svg>
+                <svg
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="16"
+                  class="cc3ba9 arrow-up hidden"
+                >
+                  <path
+                    d="M8 4a.5.5 0 0 1 .369.162l5.5 6a.5.5 0 0 1-.738.676L8 5.24l-5.131 5.598a.5.5 0 0 1-.738-.676l5.5-6A.5.5 0 0 1 8 4Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <ul class="product-text hidden">
+                <li>Machine wash 40°</li>
+                <li>Ironing medium temperature</li>
+                <li>Can withstand dry cleaning</li>
+                <li>Hang dry</li>
+              </ul>
+            </div>
           </section>
-          <section class="product-descript hide">
-            <h3 class="descript-text subhead-text">Shipping</h3>
-            <svg
-              viewBox="0 0 16 16"
-              xmlns="http://www.w3.org/2000/svg"
-              height="16"
-              width="16"
-              class="cc3ba9 arrow-down"
-            >
-              <path
-                d="M8 12a.5.5 0 0 1-.369-.162l-5.5-6a.5.5 0 1 1 .738-.676L8 10.76l5.131-5.598a.5.5 0 0 1 .738.676l-5.5 6A.5.5 0 0 1 8 12Z"
-              ></path>
-            </svg>
+          <section class="hide care-div">
+            <div class="product-descript">
+              <h3 class="descript-text subhead-text">Shipping</h3>
+              <div class="arrow-div">
+                <svg
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="16"
+                  class="cc3ba9 arrow-down"
+                >
+                  <path
+                    d="M8 12a.5.5 0 0 1-.369-.162l-5.5-6a.5.5 0 1 1 .738-.676L8 10.76l5.131-5.598a.5.5 0 0 1 .738.676l-5.5 6A.5.5 0 0 1 8 12Z"
+                  ></path>
+                </svg>
+                <svg
+                  viewBox="0 0 16 16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="16"
+                  class="cc3ba9 arrow-up hidden"
+                >
+                  <path
+                    d="M8 4a.5.5 0 0 1 .369.162l5.5 6a.5.5 0 0 1-.738.676L8 5.24l-5.131 5.598a.5.5 0 0 1-.738-.676l5.5-6A.5.5 0 0 1 8 4Z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <ul class="product-text hidden">
+                <li>
+                  Delivery times from other brands may differ, more details are
+                  shown at checkout.
+                </li>
+                <li>
+                  Delivery point – SEK 29. Standard delivery 2-4 working days
+                  (free of charge for purchases of at least SEK 300, free of
+                  charge regardless of purchase amount for plus members). Small
+                  packages can be sent as a parcel letter to your home address.
+                </li>
+              </ul>
+            </div>
           </section>
           <section class="reviews-container">
             <h3 class="review-text">Reviews</h3>
@@ -272,6 +337,10 @@
           </section>
           <div class="button-container">
             <button class="basket-button subhead-text">Add to Cart</button>
+            <span class="pop-up hidden"
+              ><p class="pop-up-text">Item has been added to the cart</p>
+              <p class="pop-up-text pop-up-button">X</p></span
+            >
           </div>
         </section>
       </div>
@@ -340,5 +409,44 @@
         </div>
       </section>
     </main>
+    <footer class="footer-nav">
+      <div class="footer-subnav">
+        <p class="footer-main"><a href="#">Company Info</a></p>
+        <div class="footer-subnavcontent">
+          <a href="#">About Brand</a>
+          <a href="#">Career</a>
+          <a href="#">Fashion Blogger</a>
+        </div>
+      </div>
+
+      <div class="footer-subnav">
+        <p class="footer-main"><a href="#">Customer Care</a></p>
+        <div class="footer-subnavcontent">
+          <a href="#">Contact Us</a>
+          <a href="#">Payment & Taxes</a>
+        </div>
+      </div>
+
+      <div class="footer-subnav">
+        <p class="footer-main"><a href="#">Help & Support</a></p>
+        <div class="footer-subnavcontent">
+          <a href="#">Shipping Info</a>
+          <a href="#">Free Return</a>
+          <a href="#">Track Order</a>
+        </div>
+      </div>
+
+      <div class="footer-subnav">
+        <p class="footer-main">Find Us</p>
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <br />
+          <a href="#">&#169; 2023 all rights reserved</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

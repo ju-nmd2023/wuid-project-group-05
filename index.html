@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/menubar.css" />
-    <script src="js/menubar.js" defer></script>
+    <link rel="stylesheet" href="css/productlist.css" />
+    <script src="js/productpage.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,6 +16,13 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <title>Women Only</title>
   </head>
@@ -143,7 +151,7 @@
         </div>
       </section>
       <section class="categories-section">
-        <h3 class="sub-heading subhead-text">Shop By Caregories</h3>
+        <h2 class="sub-heading subhead-text">Shop By Caregories</h2>
         <div class="categories-container margin-top">
           <figure class="img-icon-div">
             <img
@@ -195,7 +203,110 @@
           </figure>
         </div>
       </section>
+      <section class="similar-product-container">
+        <h2 class="subhead-text">For You</h2>
+        <div class="similar-product">
+          <div class="card-cont">
+            <figure>
+              <img
+                class="similar-image"
+                src="images/Black 2.jpg"
+                alt="Black dress"
+              />
+              <figcaption class="product-name product-caption">
+                Black dress
+                <i class="fa fa-heart heart"></i>
+              </figcaption>
+              <p class="price">360kr</p>
+            </figure>
+          </div>
+
+          <div class="card-cont">
+            <figure>
+              <img
+                class="similar-image"
+                src="images/Sequined dress.jpg"
+                alt="Sequined dress"
+              />
+              <figcaption class="product-name product-caption">
+                Sequined silver dress
+                <i class="fa fa-heart heart"></i>
+              </figcaption>
+              <p class="price">450 kr</p>
+            </figure>
+          </div>
+
+          <div class="card-cont">
+            <figure>
+              <img
+                class="similar-image"
+                src="images/Mini dress with ruffles.webp"
+                alt="Mini dress with ruffles"
+              />
+              <figcaption class="product-name product-caption">
+                Mini dress with ruffles
+                <i class="fa fa-heart heart"></i>
+              </figcaption>
+              <p class="price">560 kr</p>
+            </figure>
+          </div>
+
+          <div class="card-cont">
+            <figure class="product-card">
+              <img
+                class="similar-image"
+                src="images/White dress.jpg"
+                alt="Mini dress with ruffles"
+              />
+              <figcaption class="product-name product-caption">
+                White Dress
+                <i class="fa fa-heart heart"></i>
+              </figcaption>
+              <p class="price">560 kr</p>
+            </figure>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+
+    <footer class="footer-nav">
+      <div class="footer-subnav">
+        <p class="footer-main"><a href="#">Company Info</a></p>
+        <div class="footer-subnavcontent">
+          <a href="#">About Brand</a>
+          <a href="#">Career</a>
+          <a href="#">Fashion Blogger</a>
+        </div>
+      </div>
+
+      <div class="footer-subnav">
+        <p class="footer-main"><a href="#">Customer Care</a></p>
+        <div class="footer-subnavcontent">
+          <a href="#">Contact Us</a>
+          <a href="#">Payment & Taxes</a>
+        </div>
+      </div>
+
+      <div class="footer-subnav">
+        <p class="footer-main"><a href="#">Help & Support</a></p>
+        <div class="footer-subnavcontent">
+          <a href="#">Shipping Info</a>
+          <a href="#">Free Return</a>
+          <a href="#">Track Order</a>
+        </div>
+      </div>
+
+      <div class="footer-subnav">
+        <p class="footer-main">Find Us</p>
+        <div class="icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <br />
+          <a href="#">&#169; 2023 all rights reserved</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

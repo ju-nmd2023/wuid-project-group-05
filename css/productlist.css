@@ -113,7 +113,7 @@
   border-radius: 5%;
 }
 .discription {
-  font-size: 120%;
+  font-size: 100%;
   font-weight: 500;
 }
 
@@ -136,6 +136,7 @@
 
   text-align: center;
   padding-left: 20%;
+  font-size: 100%;
 }
 
 i {
@@ -210,14 +211,10 @@ i {
   }
 
   .category-discription {
-    font-size: 140%;
+    font-size: 80%;
   }
   .discription {
-    font-size: 120%;
-    font-weight: 400;
-  }
-  .price {
-    font-size: 120%;
+    font-weight: 700;
   }
 }
 

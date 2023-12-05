@@ -3,16 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/shoppingcart.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/personalinfo.css" />
+
+    <link rel="stylesheet" href="css/productlist.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <script src="js/main.js" defer></script>
-    <title>Personal Information</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>User Details</title>
   </head>
+
   <body>
     <header>
       <section class="header-container">
@@ -29,45 +43,50 @@
 
     <main>
       <div class="allforms">
-        <form class="personalinfo">
+        <form class="personal-info">
           <h1 id="h1personalinfo">Personal Information</h1>
           <input
-            class="inputpersonal"
+            class="input-fname"
             type="text"
             name="fname"
             placeholder="First name"
-            size="27"
           />
           <input
-            class="inputpersonal"
+            class="input-lname"
             type="text"
             name="lname"
             placeholder="Last name"
-            size="27"
           />
           <br />
           <input
-            class="inputpersonal"
+            class="input-number"
             type="number"
             number="mobileno"
             placeholder="+46XXXXXXXXX"
-            size="27"
           />
         </form>
-        <form class="addressform">
+        <form class="address-form">
           <h2 id="h2address">Delivery Address</h2>
-          Address* <br />
-          <input type="text" address="adress" size="55" /><br />
-          City* <br />
-          <input type="text" city="city" size="55" /> <br />
-          Postal Code* <br /><input type="number" postal code="postalcode" />
+          <label id="address" for="Address">Address*</label><br />
+
+          <input class="input-add" type="text" address="address" /><br />
+          <label id="city" for="City">City*</label><br />
+          <input class="input-city" type="text" city="city" /> <br />
+          <label id="postalcode" for="Postal Code">Postal Code*</label><br />
+
+          <input
+            class="input-postalcode"
+            type="number"
+            postal
+            code="postalcode"
+          />
           <br />
-          Country* <br />
-          <input type="text" country="contry" size="55" /><br />
+          <label id="country" for="Cuontry">Contry*</label><br />
+          <input class="input-country" type="text" country="contry" /><br />
         </form>
 
         <form class="cashform">
-          <h2 id="h2cash">Payment Method</h2>
+          <h3 id="h3cash">Payment Method</h3>
           <input type="radio" payment="method" value="Credit Card" /> Credit
           Card<br />
           <input type="radio" payment="method" value="Paypal" />Paypal<br />

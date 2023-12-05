@@ -1,27 +1,54 @@
 /* Personal information */
 
-.allforms {
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
   background-color: #f9f9f9;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-  height: 70;
-  margin-left: 25%;
+  margin-bottom: 5%;
 }
+
 #h1personalinfo {
-  margin-left: 30px;
-  margin-top: 20px;
+  margin-top: 5%;
+  font-size: 120%;
+  margin-bottom: 3%;
 }
-.inputpersonal {
-  margin-left: 30px;
+
+.input-fname {
+  margin-bottom: 1%;
+  width: 40%;
+  border: 1px solid black;
 }
-.addressform {
-  margin-left: 30px;
+.input-lname {
+  width: 40%;
+  border: 1px solid black;
+}
+.input-number {
+  margin-bottom: 1%;
+  width: 40%;
+  border: 1px solid black;
+}
+
+.personal-info {
+  padding: 1%;
+}
+
+#h2address {
+  font-size: 120%;
+  margin-bottom: 2%;
+}
+
+.address-form {
+  margin-left: 1%;
+  margin-bottom: 3%;
 }
 .cashform {
-  margin-left: 30px;
+  margin-left: 1%;
+}
+#h3cash {
+  font-size: 120%;
+  margin-bottom: 2%;
 }
 #cashbutton {
   width: 25%;
@@ -30,11 +57,31 @@
   color: white;
   border-color: #ff8000;
   margin-left: 35%;
+  border-radius: 20px;
+  margin-top: 3%;
+  padding: 3px;
 }
-h4 {
-  margin-bottom: 10px;
-  margin-top: 20px;
+
+.input-country {
+  width: 40%;
+  border: 1px solid black;
 }
+
+.input-add {
+  width: 40%;
+  border: 1px solid black;
+}
+
+.input-city {
+  width: 40%;
+  border: 1px solid black;
+}
+
+.input-postalcode {
+  width: 40%;
+  border: 1px solid black;
+}
+
 .thethiredbox a {
   text-decoration: none;
   color: black;
@@ -42,4 +89,87 @@ h4 {
 }
 .addressform {
   margin-right: 18%;
+}
+
+/* Making  responsive */
+
+@media screen and (max-width: 430px) {
+  .allforms {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  #h1personalinfo {
+    margin-top: 5%;
+    font-size: 120%;
+    margin-bottom: 3%;
+  }
+  .input-fname {
+    margin-bottom: 3%;
+    border: 1px solid black;
+    width: 45%;
+  }
+  .input-number {
+    margin-bottom: 3%;
+    border: 1px solid black;
+    width: 45%;
+  }
+  .input-lname {
+    border: 1px solid black;
+    width: 45%;
+  }
+  .personal-info {
+    padding: 3%;
+  }
+
+  #h2address {
+    font-size: 120%;
+    margin-bottom: 2%;
+  }
+
+  .address-form {
+    margin-left: 1%;
+    margin-bottom: 3%;
+  }
+  .cashform {
+    margin-left: 1%;
+  }
+  #h3cash {
+    font-size: 120%;
+    margin-bottom: 2%;
+  }
+  #cashbutton {
+    margin-top: 5%;
+    width: 40%;
+    margin-left: 29%;
+  }
+  .input-country {
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  .input-add {
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  .input-city {
+    width: 100%;
+    border: 1px solid black;
+  }
+
+  .input-postalcode {
+    width: 100%;
+    border: 1px solid black;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .allforms {
+    justify-content: center;
+    width: 50%;
+
+    margin-left: 25%;
+    background-color: #f9f9f9;
+  }
 }

@@ -57,6 +57,7 @@ h5 {
   position: relative;
   text-align: center;
 }
+
 .no-of-items {
   position: absolute;
   top: 0;
@@ -371,6 +372,9 @@ a.card-cont {
 /* desktop  */
 @media only screen and (min-width: 700px) {
   /* landing page */
+  .fa-angle-left {
+    font-size: 2rem !important;
+  }
   .small-icons {
     display: none;
   }

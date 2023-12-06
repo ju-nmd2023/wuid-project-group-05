@@ -1,6 +1,9 @@
+a {
+  text-decoration: none;
+}
 .thank-you-container {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 2rem auto 0 auto;
   padding: 20px;
   text-align: center;
 }
@@ -39,7 +42,7 @@
 .continue-shopping-button {
   background-color: #ff8000;
   color: white;
-  padding: 10px;
+  padding: 3px;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -49,6 +52,7 @@
   margin-left: auto;
   margin-right: auto;
   border-color: #ff8000;
+  width: 50%;
 }
 
 h1 {

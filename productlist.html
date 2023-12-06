@@ -20,6 +20,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="js/menubar.js" defer></script>
 
     <link rel="stylesheet" href="css/productlist.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -107,8 +108,12 @@
 
         <figure class="icon-container">
           <i class="fa fa-heart"></i>
-          <a class="link-tag" href="ShoppingCart2.html"
-            ><i class="fa fa-shopping-cart"><p>.</p></i></a
+          <a href="ShoppingCart2.html">
+            <i class="fa fa-shopping-cart"
+              ><span class="no-of-items hide"
+                ><p class="display-count">.</p></span
+              ></i
+            ></a
           >
         </figure>
       </section>
@@ -177,7 +182,7 @@
     <br />
     <main>
       <section class="container">
-        <a href="#"
+        <a href="productpage.html"
           ><figure class="product-card">
             <img
               class="category-image"

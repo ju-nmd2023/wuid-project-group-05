@@ -1,6 +1,6 @@
 .thank-you-container {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 2rem auto 0 auto;
   padding: 20px;
   text-align: center;
 }
@@ -49,6 +49,7 @@
   margin-left: auto;
   margin-right: auto;
   border-color: #ff8000;
+  width: 40%;
 }
 
 h1 {

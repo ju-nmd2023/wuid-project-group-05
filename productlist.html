@@ -20,6 +20,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="js/menubar.js" defer></script>
 
     <link rel="stylesheet" href="css/productlist.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -29,6 +30,7 @@
   </head>
   <body>
     <header>
+      <!-- <div class="background-div"></div> -->
       <section class="header-container">
         <div class="burger-bars">
           <div class="thehamburger">
@@ -38,7 +40,9 @@
           </div>
           <nav class="nav-container hidden">
             <ul class="nav-menu">
-              <li class="li-name"><a href="#">Dresses</a></li>
+              <li class="li-name">
+                <a class="link-tag" href="productlist.html">Dresses</a>
+              </li>
               <li class="li-name"><a href="#">Tops</a></li>
               <li class="li-name"><a href="#">Sports wear</a></li>
               <li class="li-name"><a href="#">Knitwear</a></li>
@@ -98,13 +102,19 @@
             </ul>
           </nav>
         </div>
-        <img class="logo-image" src="images/logo1.svg" alt="logo" />
+        <a href="index.html"
+          ><img class="logo-image" src="Images/logo1.svg" alt="logo"
+        /></a>
 
         <figure class="icon-container">
           <i class="fa fa-heart"></i>
-          <i class="fa fa-shopping-cart"
-            ><span class="no-of-items hide"><p class="display-count"></p></span
-          ></i>
+          <a href="ShoppingCart2.html">
+            <i class="fa fa-shopping-cart"
+              ><span class="no-of-items hide"
+                ><p class="display-count">.</p></span
+              ></i
+            ></a
+          >
         </figure>
       </section>
     </header>

@@ -9,7 +9,6 @@ const displayNumber = document.querySelector(".display-count");
 //displayNumber.style.color = "#ffffff";
 //});
 //});
-
 buttonElement.forEach(clickButton);
 function clickButton(addToCart) {
   addToCart.addEventListener("click", function (event) {

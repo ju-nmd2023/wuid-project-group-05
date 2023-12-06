@@ -57,9 +57,13 @@ header {
   color: white;
   border-color: #ff8000;
   margin-left: 35%;
-  border-radius: 20px;
+
   margin-top: 3%;
   padding: 3px;
+
+  align-items: center;
+
+  cursor: pointer;
 }
 
 .input-country {
@@ -95,7 +99,7 @@ header {
 /* To create a custom radio button */
 .radio-container {
   display: block;
-  position: relative;   /* position relative will work with the custom radio button position absolute */
+  position: relative; /* position relative will work with the custom radio button position absolute */
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;

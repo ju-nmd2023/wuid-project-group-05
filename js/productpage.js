@@ -1,9 +1,3 @@
-// hamburger menu click
-const burgerMenu = document.querySelector(".thehamburger");
-const navMenu = document.querySelector(".nav-container");
-burgerMenu.addEventListener("click", function (event) {
-  navMenu.classList.toggle("hidden");
-});
 // wishlist click (using the foreach method to iterate over collection of elements )
 const heartIcon = document.querySelectorAll(".heart");
 heartIcon.forEach(clickHeart);
@@ -103,7 +97,7 @@ const countIcon = document.querySelector(".no-of-items");
 const displayNumber = document.querySelector(".display-count");
 const popUpElement = document.querySelector(".pop-up");
 const popUpButton = document.querySelector(".pop-up-button");
-
+console.log(countIcon);
 basketButton.addEventListener("click", function (event) {
   countIcon.classList.remove("hide");
   popUpElement.classList.remove("hidden");

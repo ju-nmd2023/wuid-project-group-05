@@ -57,10 +57,12 @@ h5 {
 .fa-shopping-cart {
   position: relative;
   text-align: center;
+  color: var(--primary-color2);
 }
 .fa-shopping-cart p {
   position: absolute;
   color: var(--secondary-color2);
+  left: 3px;
 }
 .no-of-items {
   position: absolute;

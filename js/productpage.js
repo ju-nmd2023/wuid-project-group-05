@@ -6,11 +6,12 @@ burgerMenu.addEventListener("click", function (event) {
 });
 // wishlist click (using the foreach method to iterate over collection of elements )
 const heartIcon = document.querySelectorAll(".heart");
-heartIcon.forEach((heart) => {
+heartIcon.forEach(clickHeart);
+function clickHeart(heart) {
   heart.addEventListener("click", function (event) {
     this.classList.toggle("red-color");
   });
-});
+}
 // showing text under heading
 const arrowDown = document.querySelectorAll(".arrow-down");
 const productText = document.querySelectorAll(".product-text");
@@ -53,81 +54,48 @@ let color2 = colorOption[3];
 let color3 = colorOption[4];
 
 color1.addEventListener("click", function (event) {
-  displayImage.src = "images/blackcolor.webp";
-  imageSmall1.src = "images/blackdress2.webp";
-  imageSmall2.src = "images/blackdress3.webp";
+  displayImage.src = "Images/blackcolor.webp";
+  imageSmall1.src = "Images/blackdress2.webp";
+  imageSmall2.src = "Images/blackdress3.webp";
 });
 color2.addEventListener("click", function (event) {
-  displayImage.src = "images/black&white.webp";
-  imageSmall1.src = "images/b&w2.webp";
-  imageSmall2.src = "images/b&w3.webp";
+  displayImage.src = "Images/black&white.webp";
+  imageSmall1.src = "Images/b&w2.webp";
+  imageSmall2.src = "Images/b&w3.webp";
 });
 color3.addEventListener("click", function (event) {
-  displayImage.src = "images/Drapedwrapdress.jpg";
-  imageSmall1.src = "images/drap2.webp";
-  imageSmall2.src = "images/drape3.webp";
+  displayImage.src = "Images/Drapedwrapdress.jpg";
+  imageSmall1.src = "Images/drap2.webp";
+  imageSmall2.src = "Images/drape3.webp";
 });
 
 imageSmall1.addEventListener("mouseover", function (event) {
-  console.log(displayImage);
   if (displayImage.src === color1.src) {
-    displayImage.src = "images/blackdress2.webp";
+    displayImage.src = "Images/blackdress2.webp";
     imageSmall2.addEventListener("mouseover", function (event) {
-      displayImage.src = "images/blackdress3.webp";
+      displayImage.src = "Images/blackdress3.webp";
+      imageSmall1.addEventListener("mouseover", function (event) {
+        displayImage.src = "images/blackdress2.webp";
+      });
     });
-
-    // imageSmall1.addEventListener("mouseover", function (event) {
-    //   displayImage.src = "images/blackdress2.webp";
-    // });
   } else if (displayImage.src === color2.src) {
-    displayImage.src = "images//b&w2.webp";
+    displayImage.src = "Images//b&w2.webp";
     imageSmall2.addEventListener("mouseover", function (event) {
-      displayImage.src = "images/b&w3.webp";
+      displayImage.src = "Images/b&w3.webp";
+      imageSmall1.addEventListener("mouseover", function (event) {
+        displayImage.src = "images/b&w2.webp";
+      });
     });
-
-    // imageSmall1.addEventListener("mouseover", function (event) {
-    //   displayImage.src = "images/b&w2.webp";
-    // });
   } else if (displayImage.src === color3.src) {
-    displayImage.src = "images/drap2.webp";
+    displayImage.src = "Images/drap2.webp";
     imageSmall2.addEventListener("mouseover", function (event) {
-      displayImage.src = "images/drape3.webp";
+      displayImage.src = "Images/drape3.webp";
+      imageSmall1.addEventListener("mouseover", function (event) {
+        displayImage.src = "images/drap2.webp";
+      });
     });
-
-    // imageSmall1.addEventListener("mouseover", function (event) {
-    //   displayImage.src = "images/drap2.webp";
-    // });
   }
 });
-// imageSmall2.addEventListener("mouseover", function (event) {
-//   console.log(displayImage);
-//   if (displayImage.src === color1.src) {
-//     displayImage.src = "images/blackdress3.webp";
-//     imageSmall1.addEventListener("mouseover", function (event) {
-//       displayImage.src = "images/blackdress2.webp";
-//     });
-//     // imageSmall2.addEventListener("mouseover", function (event) {
-//     //   displayImage.src = "images/blackdress3.webp";
-//     // });
-//   } else if (displayImage.src === color2.src) {
-//     displayImage.src = "images//b&w3.webp";
-//     imageSmall1.addEventListener("mouseover", function (event) {
-//       displayImage.src = "images/b&w2.webp";
-//     });
-//     // imageSmall2.addEventListener("mouseover", function (event) {
-//     //   displayImage.src = "images/b&w3.webp";
-//     // });
-//   } else if (displayImage.src === color3.src) {
-//     displayImage.src = "images/drape3.webp";
-//     imageSmall1.addEventListener("mouseover", function (event) {
-//       displayImage.src = "images/drap2.webp";
-//     });
-//     // imageSmall2.addEventListener("mouseover", function (event) {
-//     //   displayImage.src = "images/drape3.webp";
-//     // });
-//   }
-// });
-
 // adding item to basket
 let num = 1;
 const basketButton = document.querySelector(".basket-button");

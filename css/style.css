@@ -57,10 +57,12 @@ h5 {
 .fa-shopping-cart {
   position: relative;
   text-align: center;
+  color: var(--primary-color2);
 }
 .fa-shopping-cart p {
   position: absolute;
   color: var(--secondary-color2);
+  left: 3px;
 }
 .no-of-items {
   position: absolute;
@@ -270,12 +272,9 @@ ul.diff-size li {
   border-radius: 20px;
   max-width: 100%;
 }
-/* .similar-product-container {
-  display: block;
-} */
 .similar-product {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -301,8 +300,9 @@ a.card-cont {
   flex-direction: row;
   justify-content: space-between;
 }
-.red-color {
-  color: #ff0000;
+.price-text {
+  font-size: 1rem;
+  color: #808080;
 }
 /* change image on hover */
 .card-with-img {
@@ -337,6 +337,9 @@ a.card-cont {
 }
 .basket-button:hover {
   background-color: #c66504;
+}
+.red-color {
+  color: #ff0000;
 }
 /* pop up */
 .pop-up {

@@ -300,8 +300,9 @@ a.card-cont {
   flex-direction: row;
   justify-content: space-between;
 }
-.red-color {
-  color: #ff0000;
+.price-text {
+  font-size: 1rem;
+  color: #808080;
 }
 /* change image on hover */
 .card-with-img {
@@ -336,6 +337,9 @@ a.card-cont {
 }
 .basket-button:hover {
   background-color: #c66504;
+}
+.red-color {
+  color: #ff0000;
 }
 /* pop up */
 .pop-up {

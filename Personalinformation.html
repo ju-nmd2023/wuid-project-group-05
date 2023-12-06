@@ -84,14 +84,25 @@
           <label id="country" for="Cuontry">Contry*</label><br />
           <input class="input-country" type="text" country="contry" /><br />
         </form>
-
-        <form class="cashform">
+        <form>
           <h3 id="h3cash">Payment Method</h3>
-          <input type="radio" payment="method" value="Credit Card" /> Credit
-          Card<br />
-          <input type="radio" payment="method" value="Paypal" />Paypal<br />
-          <input type="radio" payment="method" value="Swish" />
-          Swish
+
+          <label class="radio-container"
+            >Credit Card<input type="radio" checked="checked" name="radio" />
+            <span class="selector"></span
+          ></label>
+
+          <label class="radio-container"
+            >Paypal<input type="radio" name="radio" />
+
+            <span class="selector"></span
+          ></label>
+
+          <label class="radio-container"
+            >Swish
+            <input type="radio" name="radio" />
+            <span class="selector"></span>
+          </label>
         </form>
       </div>
       <button id="cashbutton">Proceed to Pay</button>

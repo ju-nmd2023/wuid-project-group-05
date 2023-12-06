@@ -57,38 +57,90 @@ header {
   color: white;
   border-color: #ff8000;
   margin-left: 35%;
-  border-radius: 20px;
+
   margin-top: 3%;
   padding: 3px;
+
+  align-items: center;
+
+  cursor: pointer;
 }
 
 .input-country {
   width: 40%;
   border: 1px solid black;
+  margin-bottom: 1%;
 }
 
 .input-add {
   width: 40%;
   border: 1px solid black;
+  margin-bottom: 1%;
 }
 
 .input-city {
   width: 40%;
   border: 1px solid black;
+  margin-bottom: 1%;
 }
 
 .input-postalcode {
   width: 40%;
   border: 1px solid black;
+  margin-bottom: 1%;
 }
 
-.thethiredbox a {
-  text-decoration: none;
-  color: black;
-  display: inline-flex;
-}
 .addressform {
   margin-right: 18%;
+}
+
+/* Radio Buttons */
+
+/* To create a custom radio button */
+.radio-container {
+  display: block;
+  position: relative; /* position relative will work with the custom radio button position absolute */
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 100%;
+}
+
+/* to hide browsers default Radio Buttons */
+
+.radio-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* To create a custom radio button */
+.selector {
+  position: absolute;
+
+  left: 0%;
+  height: 25px;
+  width: 25px;
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+/* When the radio button is checked change the color */
+.radio-container input:checked ~ .selector {
+  background-color: #818a92;
+}
+
+/* Make the selecor hidden when not checked) */
+.selector:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio-container input:checked ~ .selector:after {
+  display: block;
 }
 
 /* Making  responsive */

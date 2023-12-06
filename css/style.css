@@ -270,12 +270,9 @@ ul.diff-size li {
   border-radius: 20px;
   max-width: 100%;
 }
-/* .similar-product-container {
-  display: block;
-} */
 .similar-product {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }

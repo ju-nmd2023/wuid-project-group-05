@@ -98,3 +98,13 @@ basketButton.addEventListener("click", function (event) {
 popUpButton.addEventListener("click", function (event) {
   popUpElement.classList.add("hidden");
 });
+// size
+let sizeOption = document.querySelectorAll(".size-option");
+console.log(sizeOption);
+sizeOption.forEach(selectSize);
+function selectSize(size) {
+  size.addEventListener("click", function (event) {
+    this.style.backgroundColor = " #000000";
+    this.style.color = "#ffffff";
+  });
+}

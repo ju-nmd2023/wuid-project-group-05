@@ -1,12 +1,10 @@
 #creditinfo {
-  margin: 1rem;
-  text-align: center;
+  margin: 1rem 0;
 }
 .margin-option {
   margin-top: 2rem;
 }
 .criditsdiv {
-  background-color: #f9f9f9;
   padding: 1rem;
   margin: 1rem;
 }
@@ -25,31 +23,49 @@
 #cardNumber,
 #cardName {
   width: 100%;
+  height: 1.5rem;
+  border: 1px solid #ada7a7;
+  border-radius: 5px;
 }
 #expiryDate,
 #cvv {
   width: 50%;
+  height: 1.5rem;
+  border: 1px solid #ada7a7;
+  border-radius: 5px;
+  padding-left: 1rem;
 }
-#paybotton {
-  width: 50%;
+.payment-button {
+  width: 40%;
+  margin: 0 auto;
+}
+#paybutton {
+  width: 100%;
   padding: 2px 0;
   background-color: #ff8000;
   color: white;
   border-color: #ff8000;
-  align-items: center;
-  margin: 2rem auto 0 auto;
+  font-size: 1rem;
 }
-#paybotton:hover {
+#paybutton:hover {
   background-color: #c66504;
 }
 /* small screens */
-
+@media only screen and (min-width: 400px) {
+  .criditsdiv {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f9f9f9;
+  }
+}
 /* desktop */
 @media only screen and (min-width: 700px) {
   .criditsdiv {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
+    background-color: #f9f9f9;
   }
   #cardNumber,
   #cardName {
@@ -58,6 +74,10 @@
 
   .margin-option {
     margin-top: 1rem;
+  }
+  .payment-button {
+    width: 25%;
+    margin: 0 auto;
   }
 }
 @media only screen and (min-width: 1080px) {

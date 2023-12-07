@@ -46,13 +46,17 @@ h5 {
   padding: 0.5rem 1rem;
   align-items: center;
 }
+.logo-center {
+  max-width: 100%;
+  padding: 0.5rem 1rem;
+  align-items: center;
+}
 /*UI icons  */
 .icon-container {
   text-align: end;
 }
 .fa {
   font-size: 1rem !important;
-  padding: 20px 10px;
 }
 .fa-shopping-cart {
   position: relative;
@@ -209,6 +213,11 @@ h5 {
   cursor: pointer;
 }
 /* size option */
+#size {
+  width: 50%;
+  padding: 5px 0;
+  font-size: 1rem;
+}
 ul.diff-size li {
   display: inline;
   text-decoration: none;
@@ -274,7 +283,7 @@ ul.diff-size li {
 }
 .similar-product {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -362,18 +371,14 @@ a.card-cont {
 .pop-up-button {
   cursor: pointer;
 }
-
-/* small screens */
-@media only screen and (max-width: 300px) {
-  .fa {
-    padding: 0.5em 0;
-  }
-}
 /* desktop  */
 @media only screen and (min-width: 700px) {
   /* landing page */
   .fa-angle-left {
     font-size: 2rem !important;
+  }
+  .fa {
+    padding: 20px 10px;
   }
   .small-icons {
     display: none;

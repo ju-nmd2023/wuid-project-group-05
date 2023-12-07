@@ -56,32 +56,12 @@ color3.addEventListener("click", function (event) {
 });
 
 imageSmall1.addEventListener("mouseover", function (event) {
-  if (displayImage.src === color1.src) {
-    displayImage.src = "Images/blackdress2.webp";
-    imageSmall2.addEventListener("mouseover", function (event) {
-      displayImage.src = "Images/blackdress3.webp";
-      imageSmall1.addEventListener("mouseover", function (event) {
-        displayImage.src = "images/blackdress2.webp";
-      });
-    });
-  } else if (displayImage.src === color2.src) {
-    displayImage.src = "Images//b&w2.webp";
-    imageSmall2.addEventListener("mouseover", function (event) {
-      displayImage.src = "Images/b&w3.webp";
-      imageSmall1.addEventListener("mouseover", function (event) {
-        displayImage.src = "images/b&w2.webp";
-      });
-    });
-  } else if (displayImage.src === color3.src) {
-    displayImage.src = "Images/drap2.webp";
-    imageSmall2.addEventListener("mouseover", function (event) {
-      displayImage.src = "Images/drape3.webp";
-      imageSmall1.addEventListener("mouseover", function (event) {
-        displayImage.src = "images/drap2.webp";
-      });
-    });
-  }
+  displayImage.src = imageSmall1.src;
 });
+imageSmall2.addEventListener("mouseover", function (event) {
+  displayImage.src = imageSmall2.src;
+});
+
 // adding item to basket
 let num = 1;
 const basketButton = document.querySelector(".basket-button");
@@ -98,13 +78,3 @@ basketButton.addEventListener("click", function (event) {
 popUpButton.addEventListener("click", function (event) {
   popUpElement.classList.add("hidden");
 });
-// size
-let sizeOption = document.querySelectorAll(".size-option");
-console.log(sizeOption);
-sizeOption.forEach(selectSize);
-function selectSize(size) {
-  size.addEventListener("click", function (event) {
-    this.style.backgroundColor = " #000000";
-    this.style.color = "#ffffff";
-  });
-}

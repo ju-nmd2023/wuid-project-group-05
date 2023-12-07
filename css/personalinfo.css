@@ -64,6 +64,7 @@ header {
   align-items: center;
 
   cursor: pointer;
+  font-size: 100%;
 }
 
 .input-country {
@@ -119,8 +120,10 @@ header {
   position: absolute;
 
   left: 0%;
-  height: 25px;
-  width: 25px;
+
+  bottom: 10%;
+  height: 15px;
+  width: 15px;
   background-color: #f9f9f9;
   border-radius: 50%;
   border: 1px solid black;
@@ -194,6 +197,7 @@ header {
     margin-top: 5%;
     width: 40%;
     margin-left: 29%;
+    font-size: 100%;
   }
   .input-country {
     width: 100%;

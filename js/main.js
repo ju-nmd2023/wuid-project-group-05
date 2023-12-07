@@ -17,3 +17,13 @@ function clickButton(addToCart) {
     displayNumber.style.color = "#ffffff";
   });
 }
+
+// Shopping cart
+function showMessage() {
+  document.getElementById("message-box").style.display = "block";
+}
+
+// Function to close the message box
+function closeMessageBox() {
+  document.getElementById("message-box").style.display = "none";
+}

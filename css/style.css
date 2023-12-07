@@ -383,6 +383,9 @@ a.card-cont {
   .fa {
     padding: 20px 10px;
   }
+  .pad-icon {
+    padding: 0;
+  }
   .small-icons {
     display: none;
   }

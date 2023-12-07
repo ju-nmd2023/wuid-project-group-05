@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="js/menubar.js" defer></script>
+    <script src="js/main.js" defer></script>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -136,7 +138,11 @@
               <p>1 <span class="toggle-arrow">&#9660;</span></p>
               <div class="wishlist-info">Wishlist <span>&#10084;</span></div>
             </div>
-            <button class="trash-btn">&#128465;</button>
+            <button class="trash-btn" onclick="showMessage()">&#128465;</button>
+            <div id="message-box">
+              <span class="close-button" onclick="closeMessageBox()">×</span>
+              <p>Are you sure that you want to take me away!</p>
+            </div>
           </div>
           <p class="delivery-info">
             Estimated Delivery December 10, 2023 - December 13, 2023

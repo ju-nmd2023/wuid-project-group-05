@@ -138,3 +138,23 @@
     font-size: 1 rem; /* Decrease button font size */
   }
 }
+
+/* The styling of the hidden div part for the button function*/
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+#message-box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid black;
+}

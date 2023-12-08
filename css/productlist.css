@@ -53,33 +53,8 @@
   display: inline;
 }
 
-/* Making subnav responsive */
+/* Category Section*/
 
-@media screen and (max-width: 616px) {
-  .subnav {
-    float: left;
-
-    font-size: 120%;
-    padding: 0%;
-    margin-bottom: 3%;
-    gap: 5%;
-  }
-
-  .subnav-content {
-    display: none;
-    font-size: large;
-  }
-
-  .subnavbtn {
-    padding: 6px;
-  }
-
-  #nav-heading {
-    padding: 2%;
-    font-size: 120%;
-    font-weight: 500;
-  }
-}
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -87,27 +62,6 @@
   align-items: center;
   padding: 1rem 3rem 0;
 }
-@media screen and (max-width: 375px) {
-  .subnav {
-    float: left;
-
-    font-size: 100%;
-    padding: 0%;
-    margin-bottom: 3%;
-    gap: 5%;
-  }
-
-  .subnav-content {
-    display: none;
-    font-size: large;
-  }
-
-  .subnavbtn {
-    padding: 6px;
-  }
-}
-
-/* Category Section*/
 
 .category-image {
   max-width: 100%;
@@ -287,7 +241,7 @@ i {
 /* for font size in footer */
 @media screen and (max-width: 821px) {
   .subnav-section {
-    display: none;
+    display: none; /* no subnav for mobile */
   }
   .footer-main a {
     font-size: 120%;
@@ -318,7 +272,7 @@ i {
   }
 
   .subnav-section {
-    display: flex;
+    display: flex; /* subnav for desktop */
     flex-direction: row;
   }
 }

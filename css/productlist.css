@@ -3,21 +3,15 @@
 }
 
 /* The subnavigation menu */
-.subnav {
-  float: left;
-  list-style-type: none;
-  margin-bottom: 3%;
-}
-
 .subnavbtn {
   font-size: 100%;
-  padding: 14px 16px;
+  padding: 0 16px;
 
   text-decoration: none;
 }
 
 #nav-heading {
-  padding-top: 1%;
+  padding: 0 16px;
   font-size: 140%;
   font-weight: 400;
 }
@@ -27,11 +21,9 @@
   text-decoration: none;
 }
 
-.subnav-section {
-  display: flex;
-  flex-direction: row;
+.navigation {
+  margin: 1rem;
 }
-
 /* Styling of  the subnav content  */
 .subnav-content {
   display: none; /* to hide the subnav content */
@@ -88,7 +80,13 @@
     font-weight: 500;
   }
 }
-
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 3rem;
+  align-items: center;
+  padding: 1rem 3rem 0;
+}
 @media screen and (max-width: 375px) {
   .subnav {
     float: left;
@@ -112,9 +110,7 @@
 /* Category Section*/
 
 .category-image {
-  width: 80%;
-  margin-left: 0%;
-  margin-top: 5%;
+  max-width: 100%;
   border-radius: 5%;
 }
 .discription {
@@ -122,25 +118,18 @@
   font-weight: 500;
 }
 
-.container a {
+.container a,
+.red-dress {
   text-decoration: none;
   color: black;
-
   font-size: 100%;
-  min-width: 1%;
   background-color: #f9f9f9;
-  min-width: 1px;
-  margin-left: 20%;
+  /* margin-left: 20%; */
   border-radius: 5%;
 }
 
 .category-discription {
-  width: 60%;
-
   font-weight: 600;
-
-  text-align: center;
-  padding-left: 20%;
   font-size: 100%;
 }
 
@@ -149,12 +138,12 @@ i {
 }
 
 .product-card {
-  padding-left: 5%;
-  margin: 0%;
+  width: 80%;
+  margin: 1rem auto;
 }
 .price {
   color: grey;
-  font-size: 140%;
+  font-size: 100%;
 }
 .cart-button {
   width: 100%;
@@ -170,20 +159,13 @@ i {
 .cart-button:hover {
   opacity: 0.5;
 }
-.container {
+/* .container {
   margin-top: 5%;
-}
+} */
 
 /* Making Image Grid responsive */
 
 @media screen and (min-width: 375px) {
-  .container {
-    display: grid;
-    grid-template-columns: 1fr;
-
-    gap: 1rem;
-    margin-bottom: 20%;
-  }
   .discription {
     font-size: 100%;
     font-weight: 400;
@@ -191,32 +173,16 @@ i {
   .price {
     font-size: 100%;
   }
-  .category-image {
-    width: 70%;
-    margin-left: 15%;
-  }
-  .container a {
+  /* .container a {
     margin-left: 10%;
     margin-right: 10%;
-  }
+  } */
   .cart-button {
-    font-size: 80%;
-  }
-  .subnav {
-    margin-bottom: 2%;
+    font-size: 100%;
   }
 }
 
 @media screen and (min-width: 820px) {
-  .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 1rem;
-
-    align-items: center;
-  }
-
   .category-discription {
     font-size: 80%;
   }
@@ -234,11 +200,6 @@ i {
   }
   .price {
     font-size: 120%;
-  }
-
-  .category-image {
-    width: 80%;
-    margin-left: 10%;
   }
 }
 
@@ -325,6 +286,9 @@ i {
 
 /* for font size in footer */
 @media screen and (max-width: 821px) {
+  .subnav-section {
+    display: none;
+  }
   .footer-main a {
     font-size: 120%;
   }
@@ -344,8 +308,17 @@ i {
 
 /* for 3 grids at 821 */
 @media screen and (min-width: 821px) {
+  .main-container {
+    width: 85%;
+    margin: 0 auto;
+  }
   .footer-nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .subnav-section {
+    display: flex;
+    flex-direction: row;
   }
 }

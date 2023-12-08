@@ -27,6 +27,11 @@
   text-decoration: none;
 }
 
+.subnav-section {
+  display: flex;
+  flex-direction: row;
+}
+
 /* Styling of  the subnav content  */
 .subnav-content {
   display: none; /* to hide the subnav content */
@@ -165,6 +170,9 @@ i {
 .cart-button:hover {
   opacity: 0.5;
 }
+.container {
+  margin-top: 5%;
+}
 
 /* Making Image Grid responsive */
 
@@ -172,7 +180,6 @@ i {
   .container {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 20%;
 
     gap: 1rem;
     margin-bottom: 20%;
@@ -206,7 +213,6 @@ i {
     grid-template-columns: repeat(3, 1fr);
 
     gap: 1rem;
-    margin-top: 10%;
 
     align-items: center;
   }

@@ -4,7 +4,19 @@
   padding: 0;
   margin: 0;
 }
-
+/* search bar */
+#search-bar {
+  display: none;
+  width: 70%;
+  border-radius: 1rem;
+  border: 1px solid #939090;
+  padding: 3px 10px;
+  margin-left: auto;
+}
+.searchbar-container {
+  display: flex;
+  flex-direction: column;
+}
 .nav-container {
   position: absolute;
   background-color: #fff;
@@ -65,5 +77,8 @@
   }
   .nav-container {
     width: 30%;
+  }
+  #search-bar {
+    display: block;
   }
 }

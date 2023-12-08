@@ -55,9 +55,7 @@ h5 {
 .icon-container {
   text-align: end;
 }
-.fa {
-  font-size: 1rem !important;
-}
+
 .fa-shopping-cart {
   position: relative;
   text-align: center;
@@ -382,6 +380,9 @@ a.card-cont {
   }
   .fa {
     padding: 20px 10px;
+  }
+  .fa-search {
+    display: none !important;
   }
   .pad-icon {
     padding: 0;
